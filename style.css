@@ -1,0 +1,450 @@
+/*================================
+Common CSS
+======================================*/
+body{
+    color: #535353;
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    position: relative;
+}
+.container{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*================================
+Top Header CSS
+======================================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    width: 100%;
+    background: #f1f1f1;
+    padding: 8px 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+/*universel list style*/
+.inner_top_header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.inner_top_header ul li{
+   display: inline-block;   
+}
+/*End list style*/
+.contact_bar{
+    width: 65%;
+    float: left;
+}
+.contact_bar ul{
+    text-align: left;
+}
+.contact_bar ul li{
+    position: relative;
+    margin-right: 20px;
+}
+.contact_bar ul li::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    width: 1px;
+    height: 12px;
+    background: #999999;
+}
+.contact_bar ul li:last-child::after{
+    display: none;
+}
+.contact_bar ul li a{
+    display: block;
+    color: #999999;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contact_bar ul li a:hover{
+    color: #ba2e1f;
+}
+.feed_bar{
+    width: 35%;
+    float: right;
+}
+.feed_bar ul{
+    text-align: right;
+}
+.feed_bar ul li{
+    margin-left: 5px;
+}
+.feed_bar ul li{
+    margin-left: 5px;
+    color: #999999;
+    font-size: 14px;
+}
+
+/*================================
+Main Header CSS
+======================================*/
+#main_header_area{
+    width: 100%;
+    background: #ffffff;
+    padding: 25px 0 27px;
+}
+.inner_header{
+    overflow: hidden;
+}
+.logo_area{
+    width: 180px;
+    float: left
+
+}
+.search_area{
+    float: right;
+    width: 60%;
+    padding-top: 22px;
+}
+.search_area form{
+    width: 98%;
+    float: right;
+    max-width: 300px;
+    background: #c5c5c5;
+    text-align: right;
+    border: 3px solid #c5c5c5;
+    border-radius: 5px;
+}
+.search_area form input{
+    width: 70%;
+    padding: 2% 1%;
+    float: left;
+    border: 0px solid;
+    background: #c5c5c5;
+    color: #ffffff;
+}
+.search_area form input::placeholder{
+    color: #ffffff;
+}
+.search_area form input[type="submit"]{
+    width: 27%;
+    float: right;
+    border-radius: 5px;
+    color: #ff4646;
+    background: #f3f3f3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.search_area form input[type="submit"]:hover{
+    color: #f3f3f3;
+    background: #ff4646;
+}
+
+/*================================
+Main Menu CSS
+======================================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+    z-index: 1;
+}
+.inner_menu{
+    background: #ff4646;
+    border-top: 1px solid #ffa9a9;
+    border-bottom: 1px solid #ffa9a9;
+    border-radius: 5px;
+    min-height: 50px;
+    position: relative;
+}
+.inner_menu::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    height: 1px;
+    background: #dfdfdf; 
+}
+.inner_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.inner_menu ul li{
+    display: inline-block;
+    margin: 13px 18px;
+    position: relative;
+}
+.inner_menu ul li::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -18px;
+    width: 2px;
+    height: 50px;
+    background: #fff;
+}
+.inner_menu ul li:last-child::after{
+    display: none;
+}
+.inner_menu ul li a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 3px 0;
+    display: block;
+}
+.inner_menu ul li a:hover{
+    color: #d8d3d8;
+}
+/*Dropdown Menu*/
+.inner_menu ul ul{
+    position: absolute;
+    background: #161616;
+    width: 180px;
+    left: -99999px;
+    top: 30px;
+}
+.inner_menu ul li:hover ul{
+    left: 0;
+}
+.inner_menu ul li:hover ul ul{
+    left: -99999px;
+}
+.inner_menu ul ul li{
+    display: block;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #631443;
+}
+.inner_menu ul ul li::after{
+    display: none;
+}
+.inner_menu ul ul ul{
+    left: -99999px;
+    top: 0;
+}
+.inner_menu ul ul li:hover ul{
+    left: 180px;
+}
+.inner_menu ul li:hover a{
+    color: #d8d3d8;
+}
+.inner_menu ul li:hover ul li a{
+    color: #ffffff;
+}
+.inner_menu ul ul li:hover a{
+    background: #ff4646;
+}
+.inner_menu ul ul li:hover ul li a{
+    background: none;
+}
+.inner_menu ul ul li ul li a:hover{
+    background: #ff4646;
+}
+
+/*================================
+Slider Area CSS
+======================================*/
+#slider_area{
+    width: 100%;
+    clear: both;
+    margin-top: 60px;
+    position: absolute;
+    z-index: -1;
+}
+.inner_slider{
+    overflow: hidden;
+}
+.item{
+    overflow: hidden;
+}
+.slider_image{
+    width: 58%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 35px;
+}
+.slider_text{
+    width: 40%;
+    float: right;
+    box-sizing: border-box;
+}
+.slider_text h1{
+    color: #535353;
+    font-size: 38px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.slider_text p{
+    color: #545454;
+    font-size: 16px;
+    font-weight: normal;
+}
+.slider_text p a{
+    color: #ff4646;
+    text-decoration: none;
+}
+.slider_text p a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+.inner_slider_text{
+    background: #000000;
+    width: 380px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.inner_slider_text .alignleft{
+    float: left;
+    margin: 5px 10px 5px 5px;
+}
+.inner_slider_text h2{
+    font-weight: normal;
+}
+.inner_slider_text h2 a{
+    color: #ffffff;
+    font-size: 26px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.inner_slider_text h2 a:hover{
+    color: #f04b4b;
+}
+
+/*================================
+Work Area CSS
+======================================*/
+#work_area{
+    width: 100%;
+    background: #ffffff;
+    margin-top: 450px;
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1%;
+    padding-bottom: 75px;
+}
+.child_work:first-child{
+    margin-left: 0;
+}
+.child_work:last-child{
+    margin-right: 0;
+}
+.child_work h3{
+    color: #ff4646;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 7px;
+}
+.child_work img{
+    float: left;
+    margin-right: 12px;
+    margin-top: 5px;
+}
+.child_work p{
+    color: #535353;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.45em;
+    margin-top: -6px;
+}
+
+/*================================
+Footer Area CSS
+======================================*/
+#footer_area{
+    width: 100%;
+    background: #f0f0f0;
+    padding: 45px 0 0;
+    border-top: 1px solid #dfdfdf;
+    clear: both;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.child_footer{
+    float: left;
+    margin: 0 2% 15px;
+    padding-bottom: 30px;
+}
+.child_footer h2{
+    color: #545454;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.child_footer h4{
+    font-weight: normal;
+    margin: 0;
+}
+.child_footer a{
+    color: #ff4646;
+    text-decoration: none;
+    font-size: 14px;
+}
+.child_footer p{
+    color: #8a8791;
+    font-size: 14px;
+    font-weight: normal;
+}
+.blog_area{
+    width: 48%;
+    margin-left: 0;
+}
+.contact_area{
+    width: 21%;
+}
+.about_area{
+    width: 23%;
+    margin-right: 0;
+}
+.about_area a{
+    float: right;
+    display: block;
+}
+
+/*================================
+Copyright Area CSS
+======================================*/
+#copyright_area{
+    background: #838383;
+    padding: 23px 0;
+    clear: both;
+}
+.inner_copyright{
+    overflow: hidden;
+}
+.inner_copyright p{
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+}
+.left_copyright{
+    width: 65%;
+    float: left;
+}
+.right_copyright{
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+
